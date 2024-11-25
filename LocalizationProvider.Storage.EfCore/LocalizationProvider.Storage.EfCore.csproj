@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NuGetAudit>True</NuGetAudit>
+    <NuGetAuditLevel>moderate</NuGetAuditLevel>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>LocalizationProvider.Storage.EfCore</Title>
+    <PackageProjectUrl>https://github.com/Tinkamas-kodas/LocalizationProvider.Storage.EfCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Tinkamas-kodas/LocalizationProvider.Storage.EfCore</RepositoryUrl>
+    <AssemblyVersion>8.0.11</AssemblyVersion>
+    <FileVersion>8.0.11</FileVersion>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LocalizationProvider" Version="8.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.11" />
+  </ItemGroup>
+
+</Project>
