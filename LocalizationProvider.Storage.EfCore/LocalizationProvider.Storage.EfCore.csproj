@@ -13,6 +13,10 @@
     <AssemblyVersion>8.0.11</AssemblyVersion>
     <FileVersion>8.0.11</FileVersion>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <Version>8.0.11</Version>
+    <Authors>tinkamaskodas</Authors>
+    <Company>tinkamaskodas</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -22,6 +26,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="LocalizationProvider" Version="8.2.2" />
